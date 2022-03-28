@@ -15,7 +15,7 @@ const View = ({ data, mode }) => {
               className={item.class}
               color={item.color || 'teal'}
               href={item.href}
-              openLinkInNewTab={item.openLinkInNewTab}
+              openLinkInNewTab={!!item.openLinkInNewTab}
             >
               {item.category}
             </Tags.Tag>
