@@ -49,4 +49,4 @@ Before starting make sure your development environment is properly set. See [Vol
 1.  Happy hacking!
 
         cd src/addons/volto-tags-block/
-s/volto-addon-template/
+s/volto-tags-block/
