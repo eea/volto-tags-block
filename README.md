@@ -19,7 +19,7 @@
 
 ## Features
 
-Demo GIF
+![Tags Block](https://github.com/eea/volto-tags-block/raw/develop/docs/tags-block.png)
 
 ## Getting started
 

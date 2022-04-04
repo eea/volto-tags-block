@@ -4,22 +4,13 @@ const tagSchema = {
     {
       id: 'default',
       title: 'Default',
-      fields: ['category', 'color', 'href', 'openLinkInNewTab'],
+      fields: ['category', 'href', 'openLinkInNewTab'],
     },
   ],
   properties: {
     category: {
-      title: 'Category',
+      title: 'Text',
       widget: 'textarea',
-    },
-    color: {
-      title: 'Color',
-      defaultValue: 'teal',
-      choices: [
-        ['teal', 'Teal'],
-        ['blue-dark', 'Blue dark'],
-        ['blue-light', 'Blue light'],
-      ],
     },
     href: {
       title: 'Link',
