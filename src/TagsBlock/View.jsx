@@ -17,6 +17,7 @@ const View = ({ data, mode }) => {
                 color={item.color || 'teal'}
                 href={item.href || '#'}
                 openLinkInNewTab={!!item.openLinkInNewTab}
+                key={item.category}
               >
                 {item.category}
               </TagList.Tag>
