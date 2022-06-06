@@ -5,7 +5,7 @@ import TagsBlockView from './View';
 export default (config) => {
   config.blocks.blocksConfig.tags_block = {
     id: 'tags_block',
-    title: 'Tags block',
+    title: 'Tags',
     icon: worldSVG,
     group: 'common',
     view: TagsBlockView,
