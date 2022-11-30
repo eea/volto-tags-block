@@ -31,7 +31,7 @@ export default {
     {
       id: 'default',
       title: 'Default',
-      fields: ['title', 'position', 'items'],
+      fields: ['title', 'position', 'showTagIcon', 'items'],
     },
   ],
 
@@ -43,6 +43,10 @@ export default {
     position: {
       title: 'Alignment',
       widget: 'align',
+    },
+    showTagIcon: {
+      title: 'Enable tag items icon',
+      type: 'boolean',
     },
     items: {
       title: 'Tag items',
