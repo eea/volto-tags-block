@@ -2,7 +2,7 @@ import React from 'react';
 import TagList from '@eeacms/volto-tags-block/Tags/Tags';
 
 const View = ({ data, mode }) => {
-  const { items = [], title, position } = data;
+  const { items = [], title, position, showTagIcon } = data;
 
   if (!items.length && mode === 'edit') return <p>Add Tag items</p>;
   return (
@@ -17,6 +17,7 @@ const View = ({ data, mode }) => {
                 color={item.color || 'teal'}
                 href={item.href || '#'}
                 openLinkInNewTab={!!item.openLinkInNewTab}
+                showTagIcon={showTagIcon}
                 key={item.category}
               >
                 {item.category}
