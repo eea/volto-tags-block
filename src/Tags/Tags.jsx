@@ -1,6 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 import { UniversalLink } from '@plone/volto/components';
+import { getFieldURL } from '@eeacms/volto-tags-block/helpers';
 import { Icon } from 'semantic-ui-react';
 
 function TagList({ children, position }) {
@@ -19,7 +20,7 @@ TagList.Tag = ({ children, href, openLinkInNewTab, showTagIcon }) => {
   return (
     <UniversalLink
       className="tag"
-      href={href}
+      href={getFieldURL(href)}
       openLinkInNewTab={openLinkInNewTab}
     >
       {showTagIcon && <Icon className={`icon`} name="hashtag" />}

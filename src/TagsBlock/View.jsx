@@ -1,5 +1,6 @@
 import React from 'react';
 import TagList from '@eeacms/volto-tags-block/Tags/Tags';
+import { getFieldURL } from '@eeacms/volto-tags-block/helpers';
 
 const View = ({ data, mode }) => {
   const { items = [], title, position, showTagIcon } = data;
@@ -15,7 +16,7 @@ const View = ({ data, mode }) => {
               <TagList.Tag
                 className={item.class}
                 color={item.color || 'teal'}
-                href={item.href || '#'}
+                href={getFieldURL(item.href) || '#'}
                 openLinkInNewTab={!!item.openLinkInNewTab}
                 showTagIcon={showTagIcon}
                 key={item.category}
