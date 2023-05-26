@@ -1,8 +1,8 @@
 import React from 'react';
 import cx from 'classnames';
+import { Icon } from 'semantic-ui-react';
 import { UniversalLink } from '@plone/volto/components';
 import { getFieldURL } from '@eeacms/volto-tags-block/helpers';
-import { Icon } from 'semantic-ui-react';
 
 function TagList({ children, position }) {
   return <div className={cx('eea tags', position)}>{children}</div>;
