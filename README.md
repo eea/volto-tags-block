@@ -20,6 +20,7 @@
 ## Features
 
 ![Tags Block](https://github.com/eea/volto-tags-block/raw/develop/docs/tags-block.png)
+![Tags Block Demo](https://github.com/eea/volto-tags-block/raw/docs/docs/volto-tags.gif)
 
 ## Getting started
 
