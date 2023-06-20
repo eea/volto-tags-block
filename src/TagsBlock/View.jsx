@@ -5,6 +5,7 @@ const View = ({ data, mode }) => {
   const { items = [], title, position, showTagIcon } = data;
 
   if (!items.length && mode === 'edit') return <p>Add Tag items</p>;
+
   return (
     <TagList position={position}>
       <TagList.Title>{title}</TagList.Title>
@@ -15,7 +16,7 @@ const View = ({ data, mode }) => {
               <TagList.Tag
                 className={item.class}
                 color={item.color || 'teal'}
-                href={item.href || '#'}
+                href={mode !== 'edit' && item.href ? item.href : '#'}
                 openLinkInNewTab={!!item.openLinkInNewTab}
                 showTagIcon={showTagIcon}
                 key={item.category}
