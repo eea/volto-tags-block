@@ -16,7 +16,7 @@ const View = ({ data, mode }) => {
               <TagList.Tag
                 className={item.class}
                 color={item.color || 'teal'}
-                href={mode !== 'edit' && item.href ? item.href : '#'}
+                {...(mode !== 'edit' && item.href ? { href: item.href } : {})}
                 openLinkInNewTab={!!item.openLinkInNewTab}
                 showTagIcon={showTagIcon}
                 key={item.category}
