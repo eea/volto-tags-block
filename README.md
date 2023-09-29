@@ -92,9 +92,3 @@ See [LICENSE.md](https://github.com/eea/volto-tags-block/blob/master/LICENSE.md)
 ## Funding
 
 [European Environment Agency (EU)](http://eea.europa.eu)
-volto-tags-block/blob/master/LICENSE.md) for details.
-
-## Funding
-
-[European Environment Agency (EU)](http://eea.europa.eu)
-
