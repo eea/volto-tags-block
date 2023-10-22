@@ -19,8 +19,8 @@
 
 ## Features
 
-![Tags Block](https://github.com/eea/volto-tags-block/raw/master/docs/tags-block.png)
-![Tags Block Demo](https://github.com/eea/volto-tags-block/raw/master/docs/volto-tags.gif)
+![Tags Block](https://raw.githubusercontent.com/eea/volto-tags-block/master/docs/tags-block.png)
+![Tags Block Demo](https://raw.githubusercontent.com/eea/volto-tags-block/master/docs/volto-tags.gif)
 
 ## Getting started
 
