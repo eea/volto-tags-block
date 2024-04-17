@@ -6,10 +6,6 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
 
   it('Edit Blocks Layout for Book', () => {
     cy.visit('/controlpanel/dexterity-types');
-    cy.waitForResourceToLoad('@navigation');
-    cy.waitForResourceToLoad('@breadcrumbs');
-    cy.waitForResourceToLoad('@actions');
-    cy.waitForResourceToLoad('@types');
 
     cy.get('a[href="/controlpanel/dexterity-types/book"]').should(
       'have.text',
@@ -40,10 +36,6 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
     cy.get('#toolbar-save').click();
 
     cy.visit('/cypress');
-    cy.waitForResourceToLoad('@navigation');
-    cy.waitForResourceToLoad('@breadcrumbs');
-    cy.waitForResourceToLoad('@actions');
-    cy.waitForResourceToLoad('@types');
 
     cy.get('button[class="add"]').click();
     cy.get('#toolbar-add-book').click();
@@ -55,9 +47,13 @@ describe('ControlPanel: Dexterity Content-Types Layout', () => {
 
     cy.get('.tags_block div[role="presentation"]').click();
     cy.get('.add-item-button-wrapper .button').click();
-    cy.get('.accordion .inline.field #field-category-0-items-0').click().type('My first tag');
+    cy.get('.accordion .inline.field #field-category-0-items-0')
+      .click()
+      .type('My first tag');
     cy.get('.add-item-button-wrapper .button').click();
-    cy.get('.accordion .inline.field #field-category-0-items-1').click().type('My second tag');
+    cy.get('.accordion .inline.field #field-category-0-items-1')
+      .click()
+      .type('My second tag');
 
     cy.get('#toolbar-save').click();
     cy.get('.documentFirstHeading').contains('My First Book');

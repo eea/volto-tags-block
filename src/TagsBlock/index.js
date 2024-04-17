@@ -2,6 +2,7 @@ import iconSVG from '@plone/volto/icons/tag.svg';
 import TagsBlockEdit from './Edit';
 import TagsBlockView from './View';
 
+// eslint-disable-next-line import/no-anonymous-default-export
 export default (config) => {
   config.blocks.blocksConfig.tags_block = {
     id: 'tags_block',
