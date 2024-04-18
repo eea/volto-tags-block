@@ -2,7 +2,7 @@ import iconSVG from '@plone/volto/icons/tag.svg';
 import TagsBlockEdit from './Edit';
 import TagsBlockView from './View';
 
-const config = (config) => {
+const applyConfig = (config) => {
   config.blocks.blocksConfig.tags_block = {
     id: 'tags_block',
     title: 'Tags',
@@ -21,4 +21,4 @@ const config = (config) => {
   return config;
 };
 
-export default config;
+export default applyConfig;
