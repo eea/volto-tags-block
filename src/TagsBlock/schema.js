@@ -24,8 +24,7 @@ const tagSchema = {
   required: [],
 };
 
-// eslint-disable-next-line import/no-anonymous-default-export
-export default {
+const schema = {
   title: 'Tag block',
 
   fieldsets: [
@@ -58,3 +57,5 @@ export default {
 
   required: [],
 };
+
+export default schema;
