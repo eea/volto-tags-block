@@ -24,7 +24,7 @@ const tagSchema = {
   required: [],
 };
 
-export default {
+const schema = {
   title: 'Tag block',
 
   fieldsets: [
@@ -57,3 +57,5 @@ export default {
 
   required: [],
 };
+
+export default schema;
