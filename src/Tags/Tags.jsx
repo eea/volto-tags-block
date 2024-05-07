@@ -17,15 +17,20 @@ TagList.Content = ({ children }) => (
 );
 
 TagList.Tag = ({ children, href, openLinkInNewTab, showTagIcon }) => {
-  return (
+  return href ? (
     <UniversalLink
-      className="tag"
+      className="tag link"
       href={getFieldURL(href)}
       openLinkInNewTab={openLinkInNewTab}
     >
       {showTagIcon && <Icon className={`icon`} name="hashtag" />}
       <span className="name">{children}</span>
     </UniversalLink>
+  ) : (
+    <div className="tag">
+      {showTagIcon && <Icon className={`icon`} name="hashtag" />}
+      <span className="name">{children}</span>
+    </div>
   );
 };
 
