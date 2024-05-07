@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 import { Icon } from 'semantic-ui-react';
-import { UniversalLink } from '@plone/volto/components';
+import { ConditionalLink } from '@plone/volto/components';
 import { getFieldURL } from '@eeacms/volto-tags-block/helpers';
 
 function TagList({ children, position }) {
@@ -18,14 +18,16 @@ TagList.Content = ({ children }) => (
 
 TagList.Tag = ({ children, href, openLinkInNewTab, showTagIcon }) => {
   return (
-    <UniversalLink
-      className="tag"
-      href={getFieldURL(href)}
-      openLinkInNewTab={openLinkInNewTab}
-    >
-      {showTagIcon && <Icon className={`icon`} name="hashtag" />}
-      <span className="name">{children}</span>
-    </UniversalLink>
+    <div className={`tag ${href ? 'link' : ''}`}>
+      <ConditionalLink
+        condition={href}
+        to={href ? getFieldURL(href) : null}
+        openLinkInNewTab={openLinkInNewTab}
+      >
+        {showTagIcon && <Icon className={`icon`} name="hashtag" />}
+        <span className="name">{children}</span>
+      </ConditionalLink>
+    </div>
   );
 };
 
