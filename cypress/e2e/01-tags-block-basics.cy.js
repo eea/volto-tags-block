@@ -42,7 +42,7 @@ describe('Blocks Tests', () => {
     cy.get('.tags-title').contains('Tags Demo');
     cy.get('.tags .tags-content .tag').contains('test 1');
     cy.get('.tags .tags-content .tag').contains('test 2');
-    cy.get('.tags .tags-content a[target="_blank"].tag').contains('test 2');
+    cy.get('.tags .tags-content a[target="_blank"]').contains('test 2');
 
     cy.createContent({
       contentType: 'Document',
