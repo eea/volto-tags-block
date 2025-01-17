@@ -32,8 +32,8 @@ const messages = defineMessages({
   tagItems: {
     id: 'tagItems',
     defaultMessage: 'Tag items',
-  }
-})
+  },
+});
 
 const tagSchema = (intl) => ({
   title: intl.formatMessage(messages.tagItem),

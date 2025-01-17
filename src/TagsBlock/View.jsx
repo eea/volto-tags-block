@@ -6,14 +6,15 @@ const messages = defineMessages({
   addTagItems: {
     id: 'Add Tag Items',
     defaultMessage: 'Add Tag Items',
-  }
-})
+  },
+});
 
 const View = ({ data, mode }) => {
-  const intl = useIntl()
+  const intl = useIntl();
   const { items = [], title, position, showTagIcon } = data;
 
-  if (!items.length && mode === 'edit') return <p>{intl.formatMessage(messages.addTagItems)}</p>;
+  if (!items.length && mode === 'edit')
+    return <p>{intl.formatMessage(messages.addTagItems)}</p>;
 
   return (
     <TagList position={position}>
