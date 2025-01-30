@@ -1,10 +1,20 @@
 import React from 'react';
 import TagList from '@eeacms/volto-tags-block/Tags/Tags';
+import { defineMessages, useIntl } from 'react-intl';
+
+const messages = defineMessages({
+  addTagItems: {
+    id: 'Add Tag Items',
+    defaultMessage: 'Add Tag Items',
+  },
+});
 
 const View = ({ data, mode }) => {
+  const intl = useIntl();
   const { items = [], title, position, showTagIcon } = data;
 
-  if (!items.length && mode === 'edit') return <p>Add Tag items</p>;
+  if (!items.length && mode === 'edit')
+    return <p>{intl.formatMessage(messages.addTagItems)}</p>;
 
   return (
     <TagList position={position}>
