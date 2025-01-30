@@ -11,4 +11,47 @@ msgstr ""
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: \n"
 
+#. Default: "Add Tag Items"
+#: TagsBlock/View
+msgid "Add Tag Items"
+msgstr "Tag Elemente hinzufügen"
 
+#. Default: "Default"
+#: TagsBlock/schema
+msgid "Default"
+msgstr "Standard"
+
+#. Default: "Tag item"
+#: TagsBlock/schema
+msgid "Tag item"
+msgstr "Tag Element"
+
+#. Default: "Alignment"
+#: TagsBlock/schema
+msgid "alignment"
+msgstr "Ausrichtung"
+
+#. Default: "Open link in new tab?"
+#: TagsBlock/schema
+msgid "openLinkInNewTab"
+msgstr "Link in neuem Tab öffnen?"
+
+#. Default: "Enable tag items icon"
+#: TagsBlock/schema
+msgid "showTagIcon"
+msgstr "Icon für Tags aktivieren?"
+
+#. Default: "Tag block"
+#: TagsBlock/schema
+msgid "tagBlock"
+msgstr ""
+
+#. Default: "Tag items"
+#: TagsBlock/schema
+msgid "tagItems"
+msgstr "Tag Elemente"
+
+#. Default: "Title"
+#: TagsBlock/schema
+msgid "title"
+msgstr "Titel"
