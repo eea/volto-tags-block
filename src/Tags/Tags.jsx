@@ -1,7 +1,7 @@
 import React from 'react';
 import cx from 'classnames';
 import { Icon } from 'semantic-ui-react';
-import { ConditionalLink } from '@plone/volto/components';
+import ConditionalLink from '@plone/volto/components/manage/ConditionalLink/ConditionalLink';
 import { getFieldURL } from '@eeacms/volto-tags-block/helpers';
 
 function TagList({ children, position }) {
